@@ -31,7 +31,8 @@ else if ( action == 2) {
 
 else if ( action == 3) {
     for ( let i = 0 ; i < planets.length ; i++) {
-        const newPlanets = planets[i].charAt(0).toUpperCase() + planets[i].slice(1).toLowerCase();
+        //const newPlanets = planets[i].charAt(0).toUpperCase() + planets[i].slice(1).toLowerCase();
+        const newPlanets = planets[i][0].toUpperCase() + planets[i].slice(1).toLowerCase();
         html += `<h2>${newPlanets}</h2>`;
         main.innerHTML = html; 
     }
